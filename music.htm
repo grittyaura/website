@@ -1,43 +1,119 @@
 <!doctype html>
 <html>
-  <head>
-	
-    <title>Aura's Music</title>
+<head>
+  <title>Aura's Music</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
-		
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+
+  <style>
+  /* ===== GLOBAL BACKGROUND ===== */
+  html{
+    cursor: url(cursors/about-me.cur), auto !important;
+  }
+
+  body{
+    background-image: url('https://grittyaura.github.io/website/music%20background.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: pink;
+    margin: 0;
+  }
+
+  /* Typography */
+  p{
+    font-family: 'Averia Libre', cursive;
+    color:#0437F2;
+  }
+
+  h1{
+    font-size: 35px;
+    color: #39FF14;
+  }
+
+  a{
+    font-family: 'Poppins', sans-serif;
+    color:#C81ABE;
+    cursor: url(cursors/link.cur), auto !important;
+  }
+
+  /* ===== LINKTREE ===== */
+  .aura-linktree-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  .linktree-container {
+    max-width: 460px;
+    height: 400px;
+    padding: 20px;
+    background-color: #E6E6FA;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linktree-container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #FF69B4;
+  }
+
+  .link-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+    border: 2px solid #FF69B4;
+    color: #FF69B4;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .link-btn:hover {
+    background: #FF69B4;
+    color: #fff;
+  }
+
+  /* ===== VIDEOS ===== */
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  </style>
+</head>
+
+<body>
 
 <div class="row">
-  <div class= "col-12" style="padding-left:5%;">
-    
-
-    <br>
-    
-    
-    <a href="home.htm">
-    <p>⇠</p>
-    </a>
-    
-    
-
-
-    
+  <div class="col-12" style="padding-left:5%;">
+    <a href="home.htm"><p>⇠</p></a>
   </div>
 </div>
 
-
 <div class="row">
-  <div class= "col-12">
-    
-    <center>
-    
-      <a href="https://www.youtube.com/watch?v=QdGlkLu2WyY&list=PLDAN7Mphh4uyBHTZWR_HslTzTv6VMfpQ2"><img src='https://grittyaura.github.io/website/modelling/ALScover.jpg' width=17%></a>
-   
-    </center>
-    
+  <div class="col-12 text-center">
+    <a href="https://www.youtube.com/watch?v=QdGlkLu2WyY&list=PLDAN7Mphh4uyBHTZWR_HslTzTv6VMfpQ2">
+      <img src="https://grittyaura.github.io/website/modelling/ALScover.jpg" width="17%">
+    </a>
   </div>
 </div>
 
@@ -48,136 +124,27 @@
     </a>
   </div>
 </div>
-	
-<div class="row">
-  <div class="col-12">
-	  
-<!-- Aura Linktree Wrapper Start -->
+
+<!-- LINKTREE -->
 <div class="aura-linktree-wrapper">
   <div class="linktree-container">
-
     <h1>♡</h1>
 
-    <!-- Music Links -->
-    <a href="https://music.apple.com/us/artist/aura/1452273385" class="link-btn" target="_blank" rel="noopener">Apple Music ⋆｡°</a>
-    <a href="https://grittyaura.bandcamp.com" class="link-btn" target="_blank" rel="noopener">⋆｡° Bandcamp</a>
-    <a href="https://soundcloud.com/grittyaura" class="link-btn" target="_blank" rel="noopener">SoundCloud ⋆｡°</a>
-    <a href="https://open.spotify.com/artist/5bfbqVepB9jL5gBANS74iU" class="link-btn" target="_blank" rel="noopener">⋆｡° Spotify</a>
-    <a href="https://www.youtube.com/@auramoreno" class="link-btn" target="_blank" rel="noopener">YouTube ⋆｡°</a>
+    <a href="https://music.apple.com/us/artist/aura/1452273385" class="link-btn">Apple Music ⋆｡°</a>
+    <a href="https://grittyaura.bandcamp.com" class="link-btn">⋆｡° Bandcamp</a>
+    <a href="https://soundcloud.com/grittyaura" class="link-btn">SoundCloud ⋆｡°</a>
+    <a href="https://open.spotify.com/artist/5bfbqVepB9jL5gBANS74iU" class="link-btn">⋆｡° Spotify</a>
+    <a href="https://www.youtube.com/@auramoreno" class="link-btn">YouTube ⋆｡°</a>
   </div>
 </div>
 
-<style>
-.aura-linktree-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.aura-linktree-wrapper .linktree-container {
-  width: 100%;
-  max-width: 460px;
-  height: 400px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #E6E6FA; /* lilac */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.aura-linktree-wrapper h1 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #FF69B4; /* hot pink */
-}
-
-.aura-linktree-wrapper .link-btn {
-  width: 100%;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  color: #FF69B4; /* hot pink text */
-  background-color: #ffffff; /* white fill */
-  border: 2px solid #FF69B4; /* thin hot pink outline */
-  transition: all 0.2s ease;
-  display: block;
-}
-
-.aura-linktree-wrapper .link-btn:hover {
-  background-color: #FF69B4; /* fill becomes hot pink */
-  color: #ffffff; /* text turns white */
-  border-color: #FF69B4;
-}
-</style>
-<!-- Aura Linktree Wrapper End -->
-  
-  </div>
+<!-- VIDEOS -->
+<div class="row g-3 px-4">
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/cIIt7K3NqHg" allowfullscreen></iframe></div></div>
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ictkds28uHU" allowfullscreen></iframe></div></div>
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/5p-3SGrFTsw" allowfullscreen></iframe></div></div>
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/O5Uo39jdJtI" allowfullscreen></iframe></div></div>
 </div>
 
-<div class="row g-3"> <!-- g-3 adds spacing between columns -->
-  <div class="col-12 col-lg-3">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/cIIt7K3NqHg?si=2T1glT-1tFA094vU" 
-              title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <div class="col-12 col-lg-3">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/ictkds28uHU" 
-              title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <div class="col-12 col-lg-3">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/5p-3SGrFTsw?si=7dYdVVtzJUD7d9xi" 
-              title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <div class="col-12 col-lg-3">
-    <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/O5Uo39jdJtI?si=KcMVK7nfXpywczM-" 
-              title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-<style>
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-</style>
-
+</body>
 </html>
