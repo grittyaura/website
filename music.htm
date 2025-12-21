@@ -45,6 +45,7 @@
     font-size: 35px;
     color: #39FF14;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* ===== LINKTREE ===== */
@@ -57,7 +58,6 @@
 
   .linktree-container {
     max-width: 460px;
-    height: 400px;
     padding: 20px;
     background-color: #E6E6FA; /* lilac */
     border-radius: 8px;
@@ -90,11 +90,18 @@
     color: #fff;
   }
 
+  /* ===== IMAGE ===== */
+  .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* ===== VIDEOS ===== */
   .video-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px;
   }
 
   .video-wrapper iframe {
@@ -105,6 +112,7 @@
     height: 100%;
     border: none;
   }
+
   </style>
 </head>
 
@@ -138,5 +146,27 @@
   <!-- RIGHT: IMAGE + LYRICS -->
   <div class="col-12 col-lg-7 text-center">
 
-    <a href="https://www.youtube.com/watch?v=QdGlkLu2WyY&list=PLDAN7Mphh4uyBHTZWR_HslTzTv6VMfpQ2">
-      <img src="https://grittyaura
+    <div class="image-wrapper mb-3">
+      <a href="https://www.youtube.com/watch?v=QdGlkLu2WyY&list=PLDAN7Mphh4uyBHTZWR_HslTzTv6VMfpQ2">
+        <img src="https://grittyaura.github.io/website/modelling/ALScover.jpg" class="img-fluid">
+      </a>
+    </div>
+
+    <a href="https://genius.com/artists/Aura-moreno" class="lyrics-link">
+      <h1><u>☆ lyrics ☆ lyrics ☆ lyrics ☆</u></h1>
+    </a>
+
+  </div>
+
+</div>
+
+<!-- VIDEOS -->
+<div class="row g-3 px-4 mt-4">
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/cIIt7K3NqHg" allowfullscreen></iframe></div></div>
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ictkds28uHU" allowfullscreen></iframe></div></div>
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/5p-3SGrFTsw" allowfullscreen></iframe></div></div>
+  <div class="col-12 col-lg-3"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/O5Uo39jdJtI" allowfullscreen></iframe></div></div>
+</div>
+
+</body>
+</html>
