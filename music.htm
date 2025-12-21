@@ -125,90 +125,59 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row g-3"> <!-- g-3 adds spacing between columns -->
   <div class="col-12 col-lg-3">
-  
-<center>
-  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cIIt7K3NqHg?si=2T1glT-1tFA094vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</center>
-  
-  </div>
-	  <div class="col-12 col-lg-3">
-  
-  <center>
-    <br></br><br></br>
-  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ictkds28uHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    <br></br>
-    
-    </center>
-  
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/cIIt7K3NqHg?si=2T1glT-1tFA094vU" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+    </div>
   </div>
 
   <div class="col-12 col-lg-3">
-  
-  <center>
-    <br></br><br></br>
-  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5p-3SGrFTsw?si=7dYdVVtzJUD7d9xi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    <br></br>
-    
-    </center>
-  
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/ictkds28uHU" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+    </div>
   </div>
 
   <div class="col-12 col-lg-3">
-  
-  <center>
-    <br></br>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/O5Uo39jdJtI?si=KcMVK7nfXpywczM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         
- <br></br>
-  </center>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/5p-3SGrFTsw?si=7dYdVVtzJUD7d9xi" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/O5Uo39jdJtI?si=KcMVK7nfXpywczM-" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 
+<style>
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
 
-
-
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
 
 </html>
-
-<style>
-  
- html{
-  	 cursor: url(cursors/music.cur), auto !important;
- }
-  
-body{
-  background-image: url('https://grittyaura.github.io/website/music%20background.jpg');
-  background-position: top;
-  background-size: contain;
-  background-repeat: repeat;
-  background-color: lilac;
-}
-
-p{
-
-font-size: 30px;
-color: #39FF14;
-}
-
-h1{
-font-size: 20px;
-color: blue;
- 
-}
-
-a{
-cursor: url(cursors/link.cur), auto !important;
-color: blue;
-}
-  
-  
-  
-</style>
